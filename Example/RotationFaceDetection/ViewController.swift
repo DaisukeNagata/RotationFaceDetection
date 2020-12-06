@@ -12,10 +12,16 @@ import RotationFaceDetection
 class ViewController: UIViewController {
 
     var g = VNGetImageView()
+
     var a: VNAngularStructure?
+    
+    var v = VNCoreMohtion()
 
     // You do not need to set it when displaying in the remote library.
     var av = AVPlayereObject()
+    
+    var images = [UIImage(named: "dbank"),
+                  UIImage(named: "dbank2")]
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageView2: UIImageView!
@@ -39,5 +45,8 @@ class ViewController: UIViewController {
 
         // tap to detect the angle of rotation.
         g.tapped(view: imageView, v: a?.v)
+
+        // auto rotation
+        v.checkMothionStart(interval: 1, v: a?.v ?? VNImageRequest(), images: images)
     }
 }

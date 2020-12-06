@@ -21,7 +21,8 @@ public class VNImageRequest {
         return  CGFloat(roll * -1)
     }
     
-    func checkFace(_ cgImage: CGImage) {
+    public func checkFace(_ cgImage: CGImage, type: VNMothionType? = nil) {
+        var pi: Double = 0
         let faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: { [self] (request, error) in
             
             if error != nil {
@@ -31,10 +32,14 @@ public class VNImageRequest {
                   let results = faceDetectionRequest.results as? [VNFaceObservation] else {
                 return
             }
-
             results.compactMap{ observation in
-
-                a?.angle = radianFrom(Double(truncating: observation.roll!))
+                switch type {
+                case .Left :  pi =  1
+                case .Right:  pi = -1
+                case .Up   :  pi =  1
+                case .none :break
+                }
+                a?.angle = radianFrom(Double(truncating: observation.roll!) * pi)
 
             }.first
         })

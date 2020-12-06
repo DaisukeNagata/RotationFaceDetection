@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RotationFaceDetection'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'It is a library that detects the angle of an image and corrects the angle of the specified screen.'
 
 # This description is used to generate tags and improve search results.

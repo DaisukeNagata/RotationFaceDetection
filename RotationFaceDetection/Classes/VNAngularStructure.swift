@@ -20,7 +20,9 @@ public class VNAngularStructure {
 
     var angle = CGFloat() {
         didSet {
-            view?.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            DispatchQueue.main.async { [self] in
+                view?.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            }
         }
     }
 }
