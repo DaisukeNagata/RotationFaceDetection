@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageView2.image = UIImage(named: "dbank")
+        imageView2.image = UIImage(named: "arrow")
 
         // set the screen to rotate.
         a = VNAngularStructure(v: VNImageRequest(), view: imageView2)
