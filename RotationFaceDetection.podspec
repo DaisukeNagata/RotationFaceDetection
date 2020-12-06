@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/dbank0208@gmail.com/RotationFaceDetection'
+  s.homepage         = 'https://dbank0208.com/wp/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dbank0208@gmail.com' => 'dbank0208@gmail.com' }
