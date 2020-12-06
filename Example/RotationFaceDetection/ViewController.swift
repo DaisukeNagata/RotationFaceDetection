@@ -25,6 +25,31 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageView2: UIImageView!
+    
+    override var shouldAutorotate: Bool {
+        if UIDevice.current.orientation.isPortrait {
+            UIDevice.current.setValue(0, forKey: "orientation")
+        }
+        return D.orientationFlg
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if UIDevice.current.orientation.isLandscape {
+            UIDevice.current.setValue(0, forKey: "orientation")
+        }
+        return D.duration
+    }
+    
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+
+        if D.orientationFlg == false {
+            UIDevice.current.setValue(1, forKey: "orientation")
+        } else {
+            UIDevice.current.setValue(3, forKey: "orientation")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
