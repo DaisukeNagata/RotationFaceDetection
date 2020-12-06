@@ -1,0 +1,6 @@
+framework module RotationFaceDetection {
+  umbrella header "RotationFaceDetection-umbrella.h"
+
+  export *
+  module * { export * }
+}

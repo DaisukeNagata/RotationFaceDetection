@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A7FF92B98DC90CBA1D52A1907147DF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		536F839D62DAC7EA24C1662E8292C1B0 /* Pods-RotationFaceDetection_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 130425C770CE78A7E8A66CFCAB8A4FFE /* Pods-RotationFaceDetection_Tests-dummy.m */; };
+		63BDD745BE9A3A023A17FAA032561F9A /* Pods-RotationFaceDetection_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2837673D7604E8030EEDF3204B549E17 /* Pods-RotationFaceDetection_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78C06FFFCDB2E6DFB1EE8D50811688A6 /* Pods-RotationFaceDetection_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FD69D2918482CC46DCA46D542455BF /* Pods-RotationFaceDetection_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B50FAD39C28BF1D10AA20E244635330 /* RotationFaceDetection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED621BD7F2A0B842157CA1133CFD7B4 /* RotationFaceDetection-dummy.m */; };
+		B13550A248CFA356327EE9DB0E95763C /* RotationFaceDetection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F3BE5EB24DB0B22B9523BF9C284C52 /* RotationFaceDetection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBA886CE257CAA7600EFF0BB /* VNGetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA886CB257CAA7600EFF0BB /* VNGetImageView.swift */; };
+		BBA886CF257CAA7600EFF0BB /* VNImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA886CC257CAA7600EFF0BB /* VNImageRequest.swift */; };
+		BBA886D0257CAA7600EFF0BB /* VNAngularStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA886CD257CAA7600EFF0BB /* VNAngularStructure.swift */; };
+		C59F7C0616C94298BC501FC32FB55EAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D462DD534AB6D50DBB0636ACB7ECE155 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D5933E618D07D1A903465F2E67306CD6 /* Pods-RotationFaceDetection_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 650DF616C2892E36A17095D15427F0CD /* Pods-RotationFaceDetection_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96898A03FDC45FE93D8B9826AEB3C3A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9657FB4664EFAC78688E12661EBD37A2;
+			remoteInfo = RotationFaceDetection;
+		};
+		C5E89EC14D728A55DBE0973F620CEB25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2275A96F50D9BE0AEDADA89CA68C6670;
+			remoteInfo = "Pods-RotationFaceDetection_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0038469EB922F49481BB0B8F13287B66 /* RotationFaceDetection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RotationFaceDetection.modulemap; sourceTree = "<group>"; };
+		004C36C40868B4B6E3FF327257ED3053 /* Pods-RotationFaceDetection_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RotationFaceDetection_Example.release.xcconfig"; sourceTree = "<group>"; };
+		040F1363CDD0A741FFAD0FDC94BF98F8 /* RotationFaceDetection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RotationFaceDetection-prefix.pch"; sourceTree = "<group>"; };
+		0FE095DA1224D27E7B0C863213DCA142 /* Pods-RotationFaceDetection_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RotationFaceDetection_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		130425C770CE78A7E8A66CFCAB8A4FFE /* Pods-RotationFaceDetection_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RotationFaceDetection_Tests-dummy.m"; sourceTree = "<group>"; };
+		21FD69D2918482CC46DCA46D542455BF /* Pods-RotationFaceDetection_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RotationFaceDetection_Example-umbrella.h"; sourceTree = "<group>"; };
+		2837673D7604E8030EEDF3204B549E17 /* Pods-RotationFaceDetection_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RotationFaceDetection_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2F57483794F2F2FEEE8E9F93C39195FE /* Pods-RotationFaceDetection_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RotationFaceDetection_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2F63EE4DAB01F5AA5FD22B6DE626D4EB /* Pods-RotationFaceDetection_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RotationFaceDetection_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		37DDB5D126CBC317FC18526727FE3061 /* Pods-RotationFaceDetection_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RotationFaceDetection_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3978234E03E7569EC9945F7A8BD30AC3 /* RotationFaceDetection.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RotationFaceDetection.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3B661D89490516FDA6364875AAC6FD67 /* Pods-RotationFaceDetection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RotationFaceDetection_Example.modulemap"; sourceTree = "<group>"; };
+		3F0A611947F0BED8AF1CFAFC3A076FAE /* Pods-RotationFaceDetection_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RotationFaceDetection_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4ED621BD7F2A0B842157CA1133CFD7B4 /* RotationFaceDetection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RotationFaceDetection-dummy.m"; sourceTree = "<group>"; };
+		59604B01D9F4D588C7319FD2D8CD7F45 /* Pods-RotationFaceDetection_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RotationFaceDetection_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EF714265EA897F77B76F8C4D959011B /* Pods_RotationFaceDetection_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RotationFaceDetection_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650DF616C2892E36A17095D15427F0CD /* Pods-RotationFaceDetection_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RotationFaceDetection_Example-dummy.m"; sourceTree = "<group>"; };
+		67A08C8C7E1A9310085BCB3DF7B40C23 /* Pods_RotationFaceDetection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RotationFaceDetection_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		738A1A064343D0DF69240A4032337515 /* Pods-RotationFaceDetection_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RotationFaceDetection_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		74C1C83BBED7AF5BFCA625FB8A9D3837 /* Pods-RotationFaceDetection_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RotationFaceDetection_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		857ACC199CFA7B0A3D6D92571CC0D268 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		912F09A631E7E6E14302ABD3F9C17F3B /* RotationFaceDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RotationFaceDetection.release.xcconfig; sourceTree = "<group>"; };
+		92AF13035D21BA01992D52284C60D4A6 /* RotationFaceDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RotationFaceDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FAF736FBA2D7C1C29D0F5EB2915556C /* Pods-RotationFaceDetection_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RotationFaceDetection_Example-Info.plist"; sourceTree = "<group>"; };
+		B0C8F4AB1F02FCB922194CEF31135CB3 /* RotationFaceDetection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RotationFaceDetection-Info.plist"; sourceTree = "<group>"; };
+		BBA886CB257CAA7600EFF0BB /* VNGetImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VNGetImageView.swift; path = RotationFaceDetection/Classes/VNGetImageView.swift; sourceTree = "<group>"; };
+		BBA886CC257CAA7600EFF0BB /* VNImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VNImageRequest.swift; path = RotationFaceDetection/Classes/VNImageRequest.swift; sourceTree = "<group>"; };
+		BBA886CD257CAA7600EFF0BB /* VNAngularStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VNAngularStructure.swift; path = RotationFaceDetection/Classes/VNAngularStructure.swift; sourceTree = "<group>"; };
+		C27AAE20BCF93F6B8CA11255CED21E33 /* Pods-RotationFaceDetection_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RotationFaceDetection_Tests-Info.plist"; sourceTree = "<group>"; };
+		DF3DA0BA954DC205E577B89CC3E05445 /* RotationFaceDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RotationFaceDetection.debug.xcconfig; sourceTree = "<group>"; };
+		E8F3BE5EB24DB0B22B9523BF9C284C52 /* RotationFaceDetection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RotationFaceDetection-umbrella.h"; sourceTree = "<group>"; };
+		EB2B5D7DE93D9DA2E6518315C93649E2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FFB5CF27961857BE998E1C68B64A0F08 /* Pods-RotationFaceDetection_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RotationFaceDetection_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EAA3AF9DE5DEC4E7905A133792E4AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59F7C0616C94298BC501FC32FB55EAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DCCCC1A303EE8A043499DFB91617C70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7FF92B98DC90CBA1D52A1907147DF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEAB1E6093BBC034EF2611198F1E529 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D462DD534AB6D50DBB0636ACB7ECE155 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32309D52ED68E7C80413476561F542CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67A08C8C7E1A9310085BCB3DF7B40C23 /* Pods_RotationFaceDetection_Example.framework */,
+				5EF714265EA897F77B76F8C4D959011B /* Pods_RotationFaceDetection_Tests.framework */,
+				92AF13035D21BA01992D52284C60D4A6 /* RotationFaceDetection.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCF917279D8CD9BA572A5BC71065A99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0038469EB922F49481BB0B8F13287B66 /* RotationFaceDetection.modulemap */,
+				4ED621BD7F2A0B842157CA1133CFD7B4 /* RotationFaceDetection-dummy.m */,
+				B0C8F4AB1F02FCB922194CEF31135CB3 /* RotationFaceDetection-Info.plist */,
+				040F1363CDD0A741FFAD0FDC94BF98F8 /* RotationFaceDetection-prefix.pch */,
+				E8F3BE5EB24DB0B22B9523BF9C284C52 /* RotationFaceDetection-umbrella.h */,
+				DF3DA0BA954DC205E577B89CC3E05445 /* RotationFaceDetection.debug.xcconfig */,
+				912F09A631E7E6E14302ABD3F9C17F3B /* RotationFaceDetection.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RotationFaceDetection";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6F56D5C16286C1B0B9A2CA56297FE5C9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EB2B5D7DE93D9DA2E6518315C93649E2 /* LICENSE */,
+				857ACC199CFA7B0A3D6D92571CC0D268 /* README.md */,
+				3978234E03E7569EC9945F7A8BD30AC3 /* RotationFaceDetection.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7A53D259D042FB534D3844706A527A27 /* Pods-RotationFaceDetection_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3B661D89490516FDA6364875AAC6FD67 /* Pods-RotationFaceDetection_Example.modulemap */,
+				2F63EE4DAB01F5AA5FD22B6DE626D4EB /* Pods-RotationFaceDetection_Example-acknowledgements.markdown */,
+				0FE095DA1224D27E7B0C863213DCA142 /* Pods-RotationFaceDetection_Example-acknowledgements.plist */,
+				650DF616C2892E36A17095D15427F0CD /* Pods-RotationFaceDetection_Example-dummy.m */,
+				2F57483794F2F2FEEE8E9F93C39195FE /* Pods-RotationFaceDetection_Example-frameworks.sh */,
+				9FAF736FBA2D7C1C29D0F5EB2915556C /* Pods-RotationFaceDetection_Example-Info.plist */,
+				21FD69D2918482CC46DCA46D542455BF /* Pods-RotationFaceDetection_Example-umbrella.h */,
+				3F0A611947F0BED8AF1CFAFC3A076FAE /* Pods-RotationFaceDetection_Example.debug.xcconfig */,
+				004C36C40868B4B6E3FF327257ED3053 /* Pods-RotationFaceDetection_Example.release.xcconfig */,
+			);
+			name = "Pods-RotationFaceDetection_Example";
+			path = "Target Support Files/Pods-RotationFaceDetection_Example";
+			sourceTree = "<group>";
+		};
+		A1A83024DFFE3F1436C8F00BDD89B3E3 /* Pods-RotationFaceDetection_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5CF27961857BE998E1C68B64A0F08 /* Pods-RotationFaceDetection_Tests.modulemap */,
+				37DDB5D126CBC317FC18526727FE3061 /* Pods-RotationFaceDetection_Tests-acknowledgements.markdown */,
+				74C1C83BBED7AF5BFCA625FB8A9D3837 /* Pods-RotationFaceDetection_Tests-acknowledgements.plist */,
+				130425C770CE78A7E8A66CFCAB8A4FFE /* Pods-RotationFaceDetection_Tests-dummy.m */,
+				C27AAE20BCF93F6B8CA11255CED21E33 /* Pods-RotationFaceDetection_Tests-Info.plist */,
+				2837673D7604E8030EEDF3204B549E17 /* Pods-RotationFaceDetection_Tests-umbrella.h */,
+				59604B01D9F4D588C7319FD2D8CD7F45 /* Pods-RotationFaceDetection_Tests.debug.xcconfig */,
+				738A1A064343D0DF69240A4032337515 /* Pods-RotationFaceDetection_Tests.release.xcconfig */,
+			);
+			name = "Pods-RotationFaceDetection_Tests";
+			path = "Target Support Files/Pods-RotationFaceDetection_Tests";
+			sourceTree = "<group>";
+		};
+		A33F0B35F7D2CE84AA6EBFDEBA16B1E6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0406A20E0CA69F377B93CB3C252FA /* RotationFaceDetection */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C5A0406A20E0CA69F377B93CB3C252FA /* RotationFaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				BBA886CD257CAA7600EFF0BB /* VNAngularStructure.swift */,
+				BBA886CB257CAA7600EFF0BB /* VNGetImageView.swift */,
+				BBA886CC257CAA7600EFF0BB /* VNImageRequest.swift */,
+				6F56D5C16286C1B0B9A2CA56297FE5C9 /* Pod */,
+				3DCF917279D8CD9BA572A5BC71065A99 /* Support Files */,
+			);
+			name = RotationFaceDetection;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A33F0B35F7D2CE84AA6EBFDEBA16B1E6 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				32309D52ED68E7C80413476561F542CD /* Products */,
+				DEC52CEDD687E278333E2842F9FADC8C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEC52CEDD687E278333E2842F9FADC8C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A53D259D042FB534D3844706A527A27 /* Pods-RotationFaceDetection_Example */,
+				A1A83024DFFE3F1436C8F00BDD89B3E3 /* Pods-RotationFaceDetection_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		142EE2A542A3FCAE3788A77A5EE294D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13550A248CFA356327EE9DB0E95763C /* RotationFaceDetection-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171C074603588F13E197CAE5EFEA8A33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63BDD745BE9A3A023A17FAA032561F9A /* Pods-RotationFaceDetection_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C95F1764B598436CBAFF4082607D55F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C06FFFCDB2E6DFB1EE8D50811688A6 /* Pods-RotationFaceDetection_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B3EFC44F31C1E57D28452B8C871AC84 /* Pods-RotationFaceDetection_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA3190227E75D22403E723FEB2D2830 /* Build configuration list for PBXNativeTarget "Pods-RotationFaceDetection_Tests" */;
+			buildPhases = (
+				171C074603588F13E197CAE5EFEA8A33 /* Headers */,
+				B1F0C44033A93974D0E5D88C33FD722C /* Sources */,
+				7EAA3AF9DE5DEC4E7905A133792E4AB3 /* Frameworks */,
+				E5B2356075553382A445C03B35B3DE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64A41577F1F11A674C2E7C0657122A72 /* PBXTargetDependency */,
+			);
+			name = "Pods-RotationFaceDetection_Tests";
+			productName = "Pods-RotationFaceDetection_Tests";
+			productReference = 5EF714265EA897F77B76F8C4D959011B /* Pods_RotationFaceDetection_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2275A96F50D9BE0AEDADA89CA68C6670 /* Pods-RotationFaceDetection_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C0334025560A50ABDC25D4DA4401A1E /* Build configuration list for PBXNativeTarget "Pods-RotationFaceDetection_Example" */;
+			buildPhases = (
+				5C95F1764B598436CBAFF4082607D55F /* Headers */,
+				2415631F8AE8177F05C3B77DEB641B0E /* Sources */,
+				9DCCCC1A303EE8A043499DFB91617C70 /* Frameworks */,
+				8FFAFFB1B8E433E8EBC36238A535F875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF206AACE863FF19113F0B09844F51A3 /* PBXTargetDependency */,
+			);
+			name = "Pods-RotationFaceDetection_Example";
+			productName = "Pods-RotationFaceDetection_Example";
+			productReference = 67A08C8C7E1A9310085BCB3DF7B40C23 /* Pods_RotationFaceDetection_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9657FB4664EFAC78688E12661EBD37A2 /* RotationFaceDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A5DDA88B67CD4E6190B0EA606125DE /* Build configuration list for PBXNativeTarget "RotationFaceDetection" */;
+			buildPhases = (
+				142EE2A542A3FCAE3788A77A5EE294D3 /* Headers */,
+				732CBA7B06AE3E6703FDCCE32DDD5A63 /* Sources */,
+				EEEAB1E6093BBC034EF2611198F1E529 /* Frameworks */,
+				FFA16D649279E114A819350407BCE2B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RotationFaceDetection;
+			productName = RotationFaceDetection;
+			productReference = 92AF13035D21BA01992D52284C60D4A6 /* RotationFaceDetection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					9657FB4664EFAC78688E12661EBD37A2 = {
+						LastSwiftMigration = 1220;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 32309D52ED68E7C80413476561F542CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2275A96F50D9BE0AEDADA89CA68C6670 /* Pods-RotationFaceDetection_Example */,
+				0B3EFC44F31C1E57D28452B8C871AC84 /* Pods-RotationFaceDetection_Tests */,
+				9657FB4664EFAC78688E12661EBD37A2 /* RotationFaceDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FFAFFB1B8E433E8EBC36238A535F875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5B2356075553382A445C03B35B3DE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA16D649279E114A819350407BCE2B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2415631F8AE8177F05C3B77DEB641B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5933E618D07D1A903465F2E67306CD6 /* Pods-RotationFaceDetection_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732CBA7B06AE3E6703FDCCE32DDD5A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B50FAD39C28BF1D10AA20E244635330 /* RotationFaceDetection-dummy.m in Sources */,
+				BBA886D0257CAA7600EFF0BB /* VNAngularStructure.swift in Sources */,
+				BBA886CF257CAA7600EFF0BB /* VNImageRequest.swift in Sources */,
+				BBA886CE257CAA7600EFF0BB /* VNGetImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F0C44033A93974D0E5D88C33FD722C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536F839D62DAC7EA24C1662E8292C1B0 /* Pods-RotationFaceDetection_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64A41577F1F11A674C2E7C0657122A72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RotationFaceDetection_Example";
+			target = 2275A96F50D9BE0AEDADA89CA68C6670 /* Pods-RotationFaceDetection_Example */;
+			targetProxy = C5E89EC14D728A55DBE0973F620CEB25 /* PBXContainerItemProxy */;
+		};
+		DF206AACE863FF19113F0B09844F51A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RotationFaceDetection;
+			target = 9657FB4664EFAC78688E12661EBD37A2 /* RotationFaceDetection */;
+			targetProxy = 96898A03FDC45FE93D8B9826AEB3C3A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		121BB69EAB7B8CC90C923CE883A3FC58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0A611947F0BED8AF1CFAFC3A076FAE /* Pods-RotationFaceDetection_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RotationFaceDetection_Example/Pods-RotationFaceDetection_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RotationFaceDetection_Example/Pods-RotationFaceDetection_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1563A5B23C420C4F9A12CDF01700D4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59604B01D9F4D588C7319FD2D8CD7F45 /* Pods-RotationFaceDetection_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RotationFaceDetection_Tests/Pods-RotationFaceDetection_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RotationFaceDetection_Tests/Pods-RotationFaceDetection_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15BA20ADE7F946BA7368E1B090569980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912F09A631E7E6E14302ABD3F9C17F3B /* RotationFaceDetection.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RotationFaceDetection/RotationFaceDetection-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RotationFaceDetection/RotationFaceDetection-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RotationFaceDetection/RotationFaceDetection.modulemap";
+				PRODUCT_MODULE_NAME = RotationFaceDetection;
+				PRODUCT_NAME = RotationFaceDetection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2511FA6B6771985BB72F367E779421A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738A1A064343D0DF69240A4032337515 /* Pods-RotationFaceDetection_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RotationFaceDetection_Tests/Pods-RotationFaceDetection_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RotationFaceDetection_Tests/Pods-RotationFaceDetection_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		97B7BC97A14248959E23FE7215DA6268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3DA0BA954DC205E577B89CC3E05445 /* RotationFaceDetection.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RotationFaceDetection/RotationFaceDetection-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RotationFaceDetection/RotationFaceDetection-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RotationFaceDetection/RotationFaceDetection.modulemap";
+				PRODUCT_MODULE_NAME = RotationFaceDetection;
+				PRODUCT_NAME = RotationFaceDetection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDBFCB1F49FD23E7DC42AFFC8087E52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004C36C40868B4B6E3FF327257ED3053 /* Pods-RotationFaceDetection_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RotationFaceDetection_Example/Pods-RotationFaceDetection_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RotationFaceDetection_Example/Pods-RotationFaceDetection_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C0334025560A50ABDC25D4DA4401A1E /* Build configuration list for PBXNativeTarget "Pods-RotationFaceDetection_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				121BB69EAB7B8CC90C923CE883A3FC58 /* Debug */,
+				BDBFCB1F49FD23E7DC42AFFC8087E52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A5DDA88B67CD4E6190B0EA606125DE /* Build configuration list for PBXNativeTarget "RotationFaceDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B7BC97A14248959E23FE7215DA6268 /* Debug */,
+				15BA20ADE7F946BA7368E1B090569980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA3190227E75D22403E723FEB2D2830 /* Build configuration list for PBXNativeTarget "Pods-RotationFaceDetection_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1563A5B23C420C4F9A12CDF01700D4A5 /* Debug */,
+				2511FA6B6771985BB72F367E779421A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

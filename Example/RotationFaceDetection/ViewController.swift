@@ -7,18 +7,37 @@
 //
 
 import UIKit
+import RotationFaceDetection
 
 class ViewController: UIViewController {
 
+    var g = VNGetImageView()
+    var a: VNAngularStructure?
+
+    // You do not need to set it when displaying in the remote library.
+    var av = AVPlayereObject()
+
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView2: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        imageView2.image = UIImage(named: "dbank")
+
+        // set the screen to rotate.
+        a = VNAngularStructure(v: VNImageRequest(), view: imageView2)
+
+        // You do not need to set it when displaying in the remote library.
+        av.inSideOutSideCameraSet(imageView)
+
+        self.view.addSubview(g)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    override func viewDidAppear(_ animeted: Bool) {
+        super.viewDidAppear(animeted)
 
+        // tap to detect the angle of rotation.
+        g.tapped(view: imageView, v: a?.v)
+    }
 }
-
