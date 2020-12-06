@@ -37,7 +37,7 @@ public class VNImageRequest {
                 case .Left :  pi =  1
                 case .Right:  pi = -1
                 case .Up   :  pi =  1
-                case .none :break
+                case .none :  pi =  1
                 }
                 a?.angle = radianFrom(Double(truncating: observation.roll!) * pi)
 

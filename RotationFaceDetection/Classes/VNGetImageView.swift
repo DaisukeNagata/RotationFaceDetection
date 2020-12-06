@@ -26,9 +26,9 @@ public class VNGetImageView: UIView, UIGestureRecognizerDelegate {
 
         let rect = addView?.bounds
         UIGraphicsBeginImageContextWithOptions(rect?.size ?? CGSize(), false, 0.0)
-        let context : CGContext = UIGraphicsGetCurrentContext()!
+        guard let context : CGContext = UIGraphicsGetCurrentContext() else { return }
         addView?.layer.render(in: context)
-        let image : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        guard let image : UIImage = UIGraphicsGetImageFromCurrentImageContext() else { return }
         UIGraphicsEndImageContext()
 
         v?.checkFace(image.cgImage!)
