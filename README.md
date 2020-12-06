@@ -22,7 +22,7 @@ pod 'RotationFaceDetection'
 
 ## Author
 
-dbank0208@gmail.com, dbank0208@gmail.com
+dbank0208@gmail.com
 
 ## License
 
