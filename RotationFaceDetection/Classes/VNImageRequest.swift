@@ -32,22 +32,14 @@ public class VNImageRequest {
                   let results = faceDetectionRequest.results as? [VNFaceObservation] else {
                 return
             }
-            
-            var image = UIImage()
+
             results.compactMap{ observation in
                 switch type {
-                case .Left :
-                    pi =  1
-                    image = images?[1] ?? UIImage()
-                case .Right:
-                    pi =  1
-                    image = images?[3] ?? UIImage()
-                case .Up   :
-                    pi =  -1
-                    image = images?[1] ?? UIImage()
-                case .none :  pi =  1
+                case .Left : pi = -1
+                case .Right: pi = -1
+                case .Up   : pi =  1
+                case .none : pi =  1
                 }
-                DispatchQueue.main.async { a?.view?.image = image }
                 a?.angle = radianFrom(Double(truncating: observation.roll!) * pi)
 
             }.first

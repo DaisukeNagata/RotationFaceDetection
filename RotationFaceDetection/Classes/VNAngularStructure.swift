@@ -10,9 +10,10 @@ import UIKit
 public class VNAngularStructure {
 
     open var v: VNImageRequest?
-    var view: UIImageView?
+    open var frame = CGRect()
+    var view: UIView?
 
-    public init(v: VNImageRequest?, view: UIImageView?) {
+    public init(v: VNImageRequest?, view: UIView?) {
         self.v = v
         self.v?.a = self
         self.view = view
@@ -22,6 +23,7 @@ public class VNAngularStructure {
         didSet {
             DispatchQueue.main.async { [self] in
                 view?.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+                view?.frame = frame
             }
         }
     }

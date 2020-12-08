@@ -12,6 +12,10 @@ public enum VNMothionType: String {
     case Left, Right, Up
 }
 
+public enum ImageType: Int {
+    case Up, Right, Down, Left
+}
+
 public class VNCoreMohtion {
     
     public init() { }
@@ -37,14 +41,14 @@ public class VNCoreMohtion {
                 }
             }
             switch durationHandOver {
-            case VNMothionType.Left.rawValue : image = images[3]
-            case VNMothionType.Right.rawValue : image = images[1]
-            case VNMothionType.Up.rawValue : image = images[0]
+            case VNMothionType.Left.rawValue : image = images[ImageType.Down.rawValue]
+            case VNMothionType.Right.rawValue : image = images[ImageType.Up.rawValue]
+            case VNMothionType.Up.rawValue : image = images[ImageType.Right.rawValue]
             default: break
             }
 
             guard let c = image?.cgImage else { return }
-            v.checkFace(c, images: images, type: VNMothionType(rawValue: durationHandOver))
+            v.checkFace(c, type: VNMothionType(rawValue: durationHandOver))
         }
     
     }
@@ -53,4 +57,3 @@ public class VNCoreMohtion {
         motionManager.stopAccelerometerUpdates()
     }
 }
-

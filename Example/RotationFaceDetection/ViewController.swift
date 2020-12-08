@@ -59,9 +59,11 @@ class ViewController: UIViewController {
 
         // set the screen to rotate.
         a = VNAngularStructure(v: VNImageRequest(), view: imageView2)
+        a?.frame = imageView2.frame
 
         // You do not need to set it when displaying in the remote library.
-        // av.inSideOutSideCameraSet(imageView)
+        // Tap to correct leftward and downward directions.
+        av.inSideOutSideCameraSet(imageView)
 
         self.view.addSubview(g)
     }
@@ -70,11 +72,11 @@ class ViewController: UIViewController {
         super.viewDidAppear(animeted)
 
         // tap to detect the angle of rotation.
-        g.tapped(view: imageView, v: a?.v)
+        // When making a remote call, tap to correct
+        g.tapped(view: imageView, addView: imageView2, name: "dbank" ,changeName: "dbank3", v: a?.v)
 
         // auto rotation
-        v.checkMothionStart(interval: 1, v: a?.v ?? VNImageRequest(), images: images)
+         v.checkMothionStart(interval: 1, v: a?.v ?? VNImageRequest(), images: images)
         
-        print(self.v.durationHandOver)
     }
 }
