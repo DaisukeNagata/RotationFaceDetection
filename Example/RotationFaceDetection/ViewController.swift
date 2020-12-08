@@ -21,7 +21,9 @@ class ViewController: UIViewController {
     var av = AVPlayereObject()
     
     var images = [UIImage(named: "dbank"),
-                  UIImage(named: "dbank2")]
+                  UIImage(named: "dbank2"),
+                  UIImage(named: "dbank3"),
+                  UIImage(named: "dbank4")]
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageView2: UIImageView!
@@ -54,13 +56,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageView2.image = UIImage(named: "arrow")
 
         // set the screen to rotate.
         a = VNAngularStructure(v: VNImageRequest(), view: imageView2)
 
         // You do not need to set it when displaying in the remote library.
-        av.inSideOutSideCameraSet(imageView)
+        // av.inSideOutSideCameraSet(imageView)
 
         self.view.addSubview(g)
     }
@@ -73,5 +74,7 @@ class ViewController: UIViewController {
 
         // auto rotation
         v.checkMothionStart(interval: 1, v: a?.v ?? VNImageRequest(), images: images)
+        
+        print(self.v.durationHandOver)
     }
 }

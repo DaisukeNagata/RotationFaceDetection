@@ -17,30 +17,34 @@ public class VNCoreMohtion {
     public init() { }
 
     private var motionManager = CMMotionManager()
-    
+
+    open var durationHandOver = "" {
+        didSet {
+            return
+        }
+    }
+
     open func checkMothionStart(interval: Double, v: VNImageRequest, images: [UIImage?]) {
-        var duration = ""
         var image: UIImage?
 
         motionManager.accelerometerUpdateInterval = interval
-        motionManager.startAccelerometerUpdates( to: OperationQueue() ) {  p, _ in
+        motionManager.startAccelerometerUpdates( to: OperationQueue() ) { [self]  p, _ in
             if p != nil {
                 if let acceleration = p?.acceleration {
-                    duration =
+                    durationHandOver =
                         fabs( acceleration.y ) < fabs( acceleration.x )
                         ?   acceleration.x > 0 ? VNMothionType.Left.rawValue : VNMothionType.Right.rawValue : VNMothionType.Up.rawValue
                 }
             }
-
-            switch duration {
-            case VNMothionType.Left.rawValue : image = images[0]
-            case VNMothionType.Right.rawValue : image = images[0]
-            case VNMothionType.Up.rawValue : image = images[1]
+            switch durationHandOver {
+            case VNMothionType.Left.rawValue : image = images[3]
+            case VNMothionType.Right.rawValue : image = images[1]
+            case VNMothionType.Up.rawValue : image = images[0]
             default: break
             }
 
             guard let c = image?.cgImage else { return }
-            v.checkFace(c, type: VNMothionType(rawValue: duration))
+            v.checkFace(c, images: images, type: VNMothionType(rawValue: durationHandOver))
         }
     
     }

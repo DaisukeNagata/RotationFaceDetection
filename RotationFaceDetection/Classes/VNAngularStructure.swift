@@ -10,9 +10,9 @@ import UIKit
 public class VNAngularStructure {
 
     open var v: VNImageRequest?
-    var view: UIView?
+    var view: UIImageView?
 
-    public init(v: VNImageRequest?, view: UIView?) {
+    public init(v: VNImageRequest?, view: UIImageView?) {
         self.v = v
         self.v?.a = self
         self.view = view
