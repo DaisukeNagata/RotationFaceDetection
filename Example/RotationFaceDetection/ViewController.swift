@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     var g = VNGetImageView()
 
     var a: VNAngularStructure?
-    
-    var v = VNCoreMohtion()
+
+    var c = VNCoreMohtion()
 
     // You do not need to set it when displaying in the remote library.
     var av = AVPlayereObject()
@@ -56,9 +56,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
         // set the screen to rotate.
-        a = VNAngularStructure(v: VNImageRequest(), view: imageView2)
+        a = VNAngularStructure(v: VNImageRequest(c: c), view: imageView2)
         a?.frame = imageView2.frame
 
         // You do not need to set it when displaying in the remote library.
@@ -72,11 +71,10 @@ class ViewController: UIViewController {
         super.viewDidAppear(animeted)
 
         // tap to detect the angle of rotation.
-        // When making a remote call, tap to correct
         g.tapped(view: imageView, addView: imageView2, name: "dbank" ,changeName: "dbank3", v: a?.v)
+        a?.v?.c?.handOverMothionStart(interval: 1)
 
         // auto rotation
-         v.checkMothionStart(interval: 1, v: a?.v ?? VNImageRequest(), images: images)
-        
+        //v.checkMothionStart(interval: 1, v: a?.v ?? VNImageRequest(), images: images)
     }
 }

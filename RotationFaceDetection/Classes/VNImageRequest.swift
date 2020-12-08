@@ -11,17 +11,18 @@ import Vision
 public class VNImageRequest {
 
     open var a: VNAngularStructure?
+    open var c: VNCoreMohtion?
 
-    public init(a: VNAngularStructure? = nil) {
-        self.a = a
+    public init(c: VNCoreMohtion?) {
         self.a?.v = self
+        self.c = c
     }
 
     func radianFrom(_ roll: Double) -> CGFloat {
         return  CGFloat(roll * -1)
     }
     
-    public func checkFace(_ cgImage: CGImage, images: [UIImage?]? = nil, type: VNMothionType? = nil) {
+    public func checkFace(_ cgImage: CGImage, images: [UIImage?]? = nil) {
         var pi: Double = 0
         let faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: { [self] (request, error) in
             
@@ -32,13 +33,14 @@ public class VNImageRequest {
                   let results = faceDetectionRequest.results as? [VNFaceObservation] else {
                 return
             }
-
             results.compactMap{ observation in
-                switch type {
-                case .Left : pi = -1
-                case .Right: pi = -1
-                case .Up   : pi =  1
+                switch c?.durationHandOver {
+                case VNMothionType.Left.rawValue : pi =  3
+                case VNMothionType.Right.rawValue: pi =  1
+                case VNMothionType.Up.rawValue   : pi =  1
+                case VNMothionType.Down.rawValue : pi =  3
                 case .none : pi =  1
+                case .some(_): pi =  1
                 }
                 a?.angle = radianFrom(Double(truncating: observation.roll!) * pi)
 

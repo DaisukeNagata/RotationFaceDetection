@@ -9,7 +9,7 @@ import UIKit
 import CoreMotion
 
 public enum VNMothionType: String {
-    case Left, Right, Up
+    case Left, Right, Up, Down
 }
 
 public enum ImageType: Int {
@@ -37,7 +37,8 @@ public class VNCoreMohtion {
                 if let acceleration = p?.acceleration {
                     durationHandOver =
                         fabs( acceleration.y ) < fabs( acceleration.x )
-                        ?   acceleration.x > 0 ? VNMothionType.Left.rawValue : VNMothionType.Right.rawValue : VNMothionType.Up.rawValue
+                        ?   acceleration.x > 0 ? VNMothionType.Left.rawValue : VNMothionType.Right.rawValue
+                        :   acceleration.y > 0 ? VNMothionType.Down.rawValue : VNMothionType.Up.rawValue
                 }
             }
             switch durationHandOver {
@@ -48,9 +49,23 @@ public class VNCoreMohtion {
             }
 
             guard let c = image?.cgImage else { return }
-            v.checkFace(c, type: VNMothionType(rawValue: durationHandOver))
+            v.checkFace(c)
         }
     
+    }
+    
+    open func handOverMothionStart(interval: Double) {
+        motionManager.accelerometerUpdateInterval = interval
+        motionManager.startAccelerometerUpdates( to: OperationQueue() ) { [self]  p, _ in
+            if p != nil {
+                if let acceleration = p?.acceleration {
+                    durationHandOver =
+                        fabs( acceleration.y ) < fabs( acceleration.x )
+                        ?   acceleration.x > 0 ? VNMothionType.Left.rawValue : VNMothionType.Right.rawValue
+                        :   acceleration.y > 0 ? VNMothionType.Down.rawValue : VNMothionType.Up.rawValue
+                }
+            }
+        }
     }
 
     open func checkMothionStop() {
