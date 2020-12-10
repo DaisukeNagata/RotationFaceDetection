@@ -12,9 +12,9 @@ public class VNGetImageView: UIView, UIGestureRecognizerDelegate {
     open var v: VNImageRequest?
     open var tap = UITapGestureRecognizer()
     open var addView: UIImageView?
+    open var changeName: String?
     open var named: String?
     open var name: String?
-    open var changeName: String?
 
     open func tapped(view: UIView, addView: UIImageView, name: String, changeName: String,v: VNImageRequest?) {
         

@@ -21,8 +21,8 @@ public class VNImageRequest {
     func radianFrom(_ roll: Double) -> CGFloat {
         return  CGFloat(roll * -1)
     }
-    
-    public func checkFace(_ cgImage: CGImage, images: [UIImage?]? = nil) {
+
+    public func checkFace(_ cgImage: CGImage) {
         var pi: Double = 0
         let faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: { [self] (request, error) in
             

@@ -19,11 +19,6 @@ class ViewController: UIViewController {
 
     // You do not need to set it when displaying in the remote library.
     var av = AVPlayereObject()
-    
-    var images = [UIImage(named: "dbank"),
-                  UIImage(named: "dbank2"),
-                  UIImage(named: "dbank3"),
-                  UIImage(named: "dbank4")]
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageView2: UIImageView!
@@ -41,7 +36,6 @@ class ViewController: UIViewController {
         }
         return D.duration
     }
-    
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
@@ -73,8 +67,5 @@ class ViewController: UIViewController {
         // tap to detect the angle of rotation.
         g.tapped(view: imageView, addView: imageView2, name: "dbank" ,changeName: "dbank3", v: a?.v)
         a?.v?.c?.handOverMothionStart(interval: 1)
-
-        // auto rotation
-        //v.checkMothionStart(interval: 1, v: a?.v ?? VNImageRequest(), images: images)
     }
 }
