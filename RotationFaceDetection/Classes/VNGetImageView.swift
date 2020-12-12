@@ -17,7 +17,7 @@ public class VNGetImageView: UIView, UIGestureRecognizerDelegate {
     open var name: String?
 
     open func tapped(view: UIView, addView: UIImageView, name: String, changeName: String,v: VNImageRequest?) {
-        
+
         self.name = name
         self.changeName = changeName
 

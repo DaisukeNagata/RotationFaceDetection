@@ -16,7 +16,6 @@
 		BBA886CE257CAA7600EFF0BB /* VNGetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA886CB257CAA7600EFF0BB /* VNGetImageView.swift */; };
 		BBA886CF257CAA7600EFF0BB /* VNImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA886CC257CAA7600EFF0BB /* VNImageRequest.swift */; };
 		BBA886D0257CAA7600EFF0BB /* VNAngularStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA886CD257CAA7600EFF0BB /* VNAngularStructure.swift */; };
-		BBA886F7257D010B00EFF0BB /* VNCoreMohtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA886F6257D010B00EFF0BB /* VNCoreMohtion.swift */; };
 		C59F7C0616C94298BC501FC32FB55EAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D462DD534AB6D50DBB0636ACB7ECE155 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D5933E618D07D1A903465F2E67306CD6 /* Pods-RotationFaceDetection_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 650DF616C2892E36A17095D15427F0CD /* Pods-RotationFaceDetection_Example-dummy.m */; };
@@ -70,7 +69,6 @@
 		BBA886CB257CAA7600EFF0BB /* VNGetImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VNGetImageView.swift; path = RotationFaceDetection/Classes/VNGetImageView.swift; sourceTree = "<group>"; };
 		BBA886CC257CAA7600EFF0BB /* VNImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VNImageRequest.swift; path = RotationFaceDetection/Classes/VNImageRequest.swift; sourceTree = "<group>"; };
 		BBA886CD257CAA7600EFF0BB /* VNAngularStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VNAngularStructure.swift; path = RotationFaceDetection/Classes/VNAngularStructure.swift; sourceTree = "<group>"; };
-		BBA886F6257D010B00EFF0BB /* VNCoreMohtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VNCoreMohtion.swift; path = RotationFaceDetection/Classes/VNCoreMohtion.swift; sourceTree = "<group>"; };
 		C27AAE20BCF93F6B8CA11255CED21E33 /* Pods-RotationFaceDetection_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RotationFaceDetection_Tests-Info.plist"; sourceTree = "<group>"; };
 		DF3DA0BA954DC205E577B89CC3E05445 /* RotationFaceDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RotationFaceDetection.debug.xcconfig; sourceTree = "<group>"; };
 		E8F3BE5EB24DB0B22B9523BF9C284C52 /* RotationFaceDetection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RotationFaceDetection-umbrella.h"; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				BBA886CD257CAA7600EFF0BB /* VNAngularStructure.swift */,
-				BBA886F6257D010B00EFF0BB /* VNCoreMohtion.swift */,
 				BBA886CB257CAA7600EFF0BB /* VNGetImageView.swift */,
 				BBA886CC257CAA7600EFF0BB /* VNImageRequest.swift */,
 				6F56D5C16286C1B0B9A2CA56297FE5C9 /* Pod */,
@@ -390,7 +387,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B50FAD39C28BF1D10AA20E244635330 /* RotationFaceDetection-dummy.m in Sources */,
-				BBA886F7257D010B00EFF0BB /* VNCoreMohtion.swift in Sources */,
 				BBA886D0257CAA7600EFF0BB /* VNAngularStructure.swift in Sources */,
 				BBA886CF257CAA7600EFF0BB /* VNImageRequest.swift in Sources */,
 				BBA886CE257CAA7600EFF0BB /* VNGetImageView.swift in Sources */,

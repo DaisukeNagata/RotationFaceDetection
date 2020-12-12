@@ -15,14 +15,8 @@ class ViewController: UIViewController {
 
     var a: VNAngularStructure?
 
-    var c = VNCoreMohtion()
-
-    // You do not need to set it when displaying in the remote library.
-    var av = AVPlayereObject()
-
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var imageView2: UIImageView!
-    
+
     override var shouldAutorotate: Bool {
         if UIDevice.current.orientation.isPortrait {
             UIDevice.current.setValue(0, forKey: "orientation")
@@ -51,21 +45,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // set the screen to rotate.
-        a = VNAngularStructure(v: VNImageRequest(c: c), view: imageView2)
-        a?.frame = imageView2.frame
-
-        // You do not need to set it when displaying in the remote library.
-        // Tap to correct leftward and downward directions.
-        av.inSideOutSideCameraSet(imageView)
+        a = VNAngularStructure(v: VNImageRequest(), view: imageView)
+        a?.frame = imageView.frame
 
         self.view.addSubview(g)
     }
 
     override func viewDidAppear(_ animeted: Bool) {
         super.viewDidAppear(animeted)
-
+        imageView.image = UIImage(named: "dbank")
         // tap to detect the angle of rotation.
-        g.tapped(view: imageView, addView: imageView2, name: "dbank" ,changeName: "dbank3", v: a?.v)
-        a?.v?.c?.handOverMothionStart(interval: 1)
+        g.tapped(view: imageView, addView: imageView, name: "dbank", changeName: "dbank3", v: a?.v)
     }
 }
