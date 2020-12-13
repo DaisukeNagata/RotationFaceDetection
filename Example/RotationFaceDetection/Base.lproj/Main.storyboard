@@ -17,24 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qdE-Po-5b9">
-                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <rect key="frame" x="7" y="448" width="400" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qdE-Po-5b9" secondAttribute="height" multiplier="1:1" id="RVL-01-VXF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YxS-9q-ubq">
+                                <rect key="frame" x="7" y="44" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YxS-9q-ubq" secondAttribute="height" multiplier="1:1" id="FUj-XG-fql"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Ze-eV-OGX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qdE-Po-5b9" firstAttribute="leading" secondItem="1Ze-eV-OGX" secondAttribute="leading" id="FHu-Gg-eHC"/>
+                            <constraint firstItem="qdE-Po-5b9" firstAttribute="leading" secondItem="1Ze-eV-OGX" secondAttribute="leading" constant="7" id="FHu-Gg-eHC"/>
+                            <constraint firstItem="YxS-9q-ubq" firstAttribute="width" secondItem="YxS-9q-ubq" secondAttribute="height" multiplier="1:1" id="adc-ow-U2S"/>
                             <constraint firstItem="qdE-Po-5b9" firstAttribute="centerX" secondItem="zl0-tn-gYc" secondAttribute="centerX" id="b1e-6P-Ayy"/>
-                            <constraint firstItem="qdE-Po-5b9" firstAttribute="centerY" secondItem="zl0-tn-gYc" secondAttribute="centerY" id="f2t-Xh-DJL"/>
-                            <constraint firstItem="1Ze-eV-OGX" firstAttribute="trailing" secondItem="qdE-Po-5b9" secondAttribute="trailing" id="xfP-5g-XZe"/>
+                            <constraint firstItem="YxS-9q-ubq" firstAttribute="trailing" secondItem="qdE-Po-5b9" secondAttribute="trailing" id="eCJ-iP-CWt"/>
+                            <constraint firstItem="qdE-Po-5b9" firstAttribute="centerY" secondItem="zl0-tn-gYc" secondAttribute="centerY" constant="200" id="f2t-Xh-DJL"/>
+                            <constraint firstItem="YxS-9q-ubq" firstAttribute="leading" secondItem="qdE-Po-5b9" secondAttribute="leading" id="hTp-89-I2W"/>
+                            <constraint firstItem="YxS-9q-ubq" firstAttribute="top" secondItem="1Ze-eV-OGX" secondAttribute="top" id="ocL-0G-8gR"/>
+                            <constraint firstItem="1Ze-eV-OGX" firstAttribute="trailing" secondItem="qdE-Po-5b9" secondAttribute="trailing" constant="7" id="xfP-5g-XZe"/>
                             <constraint firstItem="qdE-Po-5b9" firstAttribute="centerX" secondItem="zl0-tn-gYc" secondAttribute="centerX" id="xsj-fc-b7y"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="qdE-Po-5b9" id="UWN-1N-4Ln"/>
+                        <outlet property="preViewImageView" destination="YxS-9q-ubq" id="ah6-GZ-VMm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igT-Cu-uVA" sceneMemberID="firstResponder"/>

@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     var a: VNAngularStructure?
 
     var g = VNGetImageView()
+    // Example
+    var av = AVPlayereObject()
 
+    @IBOutlet weak var preViewImageView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     
     override var shouldAutorotate: Bool {
@@ -49,6 +52,8 @@ class ViewController: UIViewController {
          Set the screen to be displayed in the second argument.
          */
         a = VNAngularStructure(v: VNImageRequest(), view: imageView)
+        // Example
+        av.inSideOutSideCameraSet(preViewImageView)
     }
 
     override func viewDidAppear(_ animeted: Bool) {
@@ -59,7 +64,7 @@ class ViewController: UIViewController {
          The first argument is the screen for tap setting.
          The second argument is the screen for setting the image, and it is OK without displaying it on the screen.
          */
-        g.tapped(view: imageView, addView: imageView, up: "dbank", left: "dbank2", down: "dbank3", right: "dbank4", v: a?.v)
+        g.tapped(view: preViewImageView, addView: imageView, up: "dbank", left: "dbank2", down: "dbank3", right: "dbank4", v: a?.v)
         a?.frame = imageView.frame
     }
 }
