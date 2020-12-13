@@ -17,9 +17,43 @@
 [![License](https://img.shields.io/cocoapods/l/RotationFaceDetection.svg?style=flat)](https://cocoapods.org/pods/RotationFaceDetection)
 [![Platform](https://img.shields.io/cocoapods/p/RotationFaceDetection.svg?style=flat)](https://cocoapods.org/pods/RotationFaceDetection)
 
+## What is this?
+```
+The above gif video uses the skyway library to enable remote calling.
+
+This library corrects the angle when the remote destination locks the screen and changes the orientation of the screen.
+
+Set the View to tap in the first argument of VNGetImageView.
+
+Tap and repeat the rotation.
+
+```
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.addSubview(g)
+        /* 
+        Please set the rotating screen.
+        Set the screen to be displayed in the second argument.
+        */
+        a = VNAngularStructure(v: VNImageRequest(), view: imageView)
+    }
+
+    override func viewDidAppear(_ animeted: Bool) {
+        super.viewDidAppear(animeted)
+　　　　　/* 
+        Please set the rotating screen
+        A face photo is a material for face recognition.
+        The first argument is the screen for tap setting.
+        The second argument is the screen for setting the image, and it is OK without displaying it on the screen.
+        */
+        g.tapped(view: imageView, addView: imageView, up: "dbank", left: "dbank2", down: "dbank3", right: "dbank4", v: a?.v)
+        a?.frame = imageView.frame
+    }
+```
 
 ## Requirements
 
