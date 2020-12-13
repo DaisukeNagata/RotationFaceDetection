@@ -11,12 +11,12 @@ import RotationFaceDetection
 
 class ViewController: UIViewController {
 
-    var g = VNGetImageView()
-
     var a: VNAngularStructure?
 
-    @IBOutlet weak var imageView: UIImageView!
+    var g = VNGetImageView()
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override var shouldAutorotate: Bool {
         if UIDevice.current.orientation.isPortrait {
             UIDevice.current.setValue(0, forKey: "orientation")
@@ -43,18 +43,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // set the screen to rotate.
-        a = VNAngularStructure(v: VNImageRequest(), view: imageView)
-        a?.frame = imageView.frame
-
         self.view.addSubview(g)
+
+        a = VNAngularStructure(v: VNImageRequest(), view: imageView)
     }
 
     override func viewDidAppear(_ animeted: Bool) {
         super.viewDidAppear(animeted)
-        imageView.image = UIImage(named: "dbank")
-        // tap to detect the angle of rotation.
-        g.tapped(view: imageView, addView: imageView, name: "dbank", changeName: "dbank3", v: a?.v)
+
+        g.tapped(view: imageView, addView: imageView, up: "dbank", left: "dbank2", down: "dbank3", right: "dbank4", v: a?.v)
+        a?.frame = imageView.frame
     }
 }

@@ -1,5 +1,5 @@
 PODS:
-  - RotationFaceDetection (0.1.0)
+  - RotationFaceDetection (0.9.0)
 
 DEPENDENCIES:
   - RotationFaceDetection (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RotationFaceDetection: 940595026064df91868e5ce15345040fb2705d9c
+  RotationFaceDetection: 5261c75e703034ad92ad9cd0f161c75494165d03
 
-PODFILE CHECKSUM: 74c304d42c309035460c2771801bd7a050e60886
+PODFILE CHECKSUM: 0b8b885bd9eb27357ecf7ea7d37f7bd8d4348df4
 
 COCOAPODS: 1.10.0

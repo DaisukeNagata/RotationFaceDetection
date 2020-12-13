@@ -1,25 +1,25 @@
-//
-//  VNGetImageView.swift
-//  RotationFaceDetection
-//
-//  Created by 永田大祐 on 2020/12/06.
-//
-
 import UIKit
 
 public class VNGetImageView: UIView, UIGestureRecognizerDelegate {
 
-    open var v: VNImageRequest?
-    open var tap = UITapGestureRecognizer()
-    open var addView: UIImageView?
-    open var changeName: String?
-    open var named: String?
-    open var name: String?
+    private var v: VNImageRequest?
+    private var tap = UITapGestureRecognizer()
+    private var addView: UIImageView?
+    private var named: String?
+    private var up: String?
+    private var right: String?
+    private var down: String?
+    private var left: String?
 
-    open func tapped(view: UIView, addView: UIImageView, name: String, changeName: String,v: VNImageRequest?) {
+    private var count = 0
 
-        self.name = name
-        self.changeName = changeName
+    open func tapped(view: UIView, addView: UIImageView, up: String, left: String, down: String, right: String, v: VNImageRequest?) {
+
+        self.named = up
+        self.up = up
+        self.right = right
+        self.down = down
+        self.left = left
 
         tap = UITapGestureRecognizer(target: self, action:#selector(getImage))
         tap.delegate = self
@@ -30,7 +30,22 @@ public class VNGetImageView: UIView, UIGestureRecognizerDelegate {
     }
 
     @objc open func getImage()  {
-        named = named == name ? changeName : name
+        switch count {
+        case 0:
+            count = 1
+            self.named = left
+        case 1:
+            count = 2
+            self.named = down
+        case 2:
+            count = 3
+            self.named = right
+        case 3:
+            count = 0
+            self.named = up
+        default:
+            break
+        }
         addView?.image = UIImage(named: named ?? "")
         let rect = addView?.bounds
         UIGraphicsBeginImageContextWithOptions(rect?.size ?? CGSize(), false, 0.0)
@@ -39,6 +54,6 @@ public class VNGetImageView: UIView, UIGestureRecognizerDelegate {
         guard let image : UIImage = UIGraphicsGetImageFromCurrentImageContext() else { return }
         UIGraphicsEndImageContext()
 
-        v?.checkFace(image.cgImage!)
+        v?.checkFace(image.cgImage!, count: count)
     }
 }
