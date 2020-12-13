@@ -12,7 +12,7 @@
 </p>
 
 
-[![bitrise](https://img.shields.io/cocoapods/v/RotationFaceDetection.svg?style=flat)](https://app.bitrise.io/app/6f5d713fc4d007f1.svg?token=IpFtIzmPBQAb45AH3wuc6A)
+[![bitrise](https://app.bitrise.io/app/6f5d713fc4d007f1.svg?token=IpFtIzmPBQAb45AH3wuc6A)](https://app.bitrise.io/app/6f5d713fc4d007f1.svg?token=IpFtIzmPBQAb45AH3wuc6A)
 [![Version](https://img.shields.io/cocoapods/v/RotationFaceDetection.svg?style=flat)](https://cocoapods.org/pods/RotationFaceDetection)
 [![License](https://img.shields.io/cocoapods/l/RotationFaceDetection.svg?style=flat)](https://cocoapods.org/pods/RotationFaceDetection)
 [![Platform](https://img.shields.io/cocoapods/p/RotationFaceDetection.svg?style=flat)](https://cocoapods.org/pods/RotationFaceDetection)
