@@ -47,7 +47,7 @@
 		16EB4B6170434F8EE9F44FED145E79C0 /* RotationFaceDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RotationFaceDetection.release.xcconfig; sourceTree = "<group>"; };
 		21FD69D2918482CC46DCA46D542455BF /* Pods-RotationFaceDetection_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RotationFaceDetection_Example-umbrella.h"; sourceTree = "<group>"; };
 		2837673D7604E8030EEDF3204B549E17 /* Pods-RotationFaceDetection_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RotationFaceDetection_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2CE47CB155B0337DA9BEA4D086B55FFD /* RotationFaceDetection.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RotationFaceDetection.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2CE47CB155B0337DA9BEA4D086B55FFD /* RotationFaceDetection.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RotationFaceDetection.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2F57483794F2F2FEEE8E9F93C39195FE /* Pods-RotationFaceDetection_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RotationFaceDetection_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2F63EE4DAB01F5AA5FD22B6DE626D4EB /* Pods-RotationFaceDetection_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RotationFaceDetection_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3051C2D0FC7A26D2FF752B2F242BB3A1 /* VNGetImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VNGetImageView.swift; path = RotationFaceDetection/Classes/VNGetImageView.swift; sourceTree = "<group>"; };
@@ -56,19 +56,19 @@
 		3B661D89490516FDA6364875AAC6FD67 /* Pods-RotationFaceDetection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RotationFaceDetection_Example.modulemap"; sourceTree = "<group>"; };
 		3F0A611947F0BED8AF1CFAFC3A076FAE /* Pods-RotationFaceDetection_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RotationFaceDetection_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		59604B01D9F4D588C7319FD2D8CD7F45 /* Pods-RotationFaceDetection_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RotationFaceDetection_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5EF714265EA897F77B76F8C4D959011B /* Pods_RotationFaceDetection_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RotationFaceDetection_Tests.framework; path = "Pods-RotationFaceDetection_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF714265EA897F77B76F8C4D959011B /* Pods_RotationFaceDetection_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RotationFaceDetection_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650DF616C2892E36A17095D15427F0CD /* Pods-RotationFaceDetection_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RotationFaceDetection_Example-dummy.m"; sourceTree = "<group>"; };
-		67A08C8C7E1A9310085BCB3DF7B40C23 /* Pods_RotationFaceDetection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RotationFaceDetection_Example.framework; path = "Pods-RotationFaceDetection_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A08C8C7E1A9310085BCB3DF7B40C23 /* Pods_RotationFaceDetection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RotationFaceDetection_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F53D5F9E4C2A7ADBF0D1E9A10985C73 /* RotationFaceDetection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RotationFaceDetection.modulemap; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		738A1A064343D0DF69240A4032337515 /* Pods-RotationFaceDetection_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RotationFaceDetection_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		74C1C83BBED7AF5BFCA625FB8A9D3837 /* Pods-RotationFaceDetection_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RotationFaceDetection_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		79BCBFB315F1613686962EF60472BAC8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		79BCBFB315F1613686962EF60472BAC8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8061E673E52E5C920CF628A134A354CD /* RotationFaceDetection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RotationFaceDetection-umbrella.h"; sourceTree = "<group>"; };
-		92AF13035D21BA01992D52284C60D4A6 /* RotationFaceDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RotationFaceDetection.framework; path = RotationFaceDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		92AF13035D21BA01992D52284C60D4A6 /* RotationFaceDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RotationFaceDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FAF736FBA2D7C1C29D0F5EB2915556C /* Pods-RotationFaceDetection_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RotationFaceDetection_Example-Info.plist"; sourceTree = "<group>"; };
-		AD5FCF1C63109C4B88157B567A448FAA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AD5FCF1C63109C4B88157B567A448FAA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AE16440CB689E4BE672C75B47169A722 /* RotationFaceDetection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RotationFaceDetection-dummy.m"; sourceTree = "<group>"; };
 		B0E0BBCB4EF4FF3509DAC25EF037A4A8 /* VNImageRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VNImageRequest.swift; path = RotationFaceDetection/Classes/VNImageRequest.swift; sourceTree = "<group>"; };
 		C043477A9A4FE46ED0423E6DAC985DF7 /* RotationFaceDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RotationFaceDetection.debug.xcconfig; sourceTree = "<group>"; };
@@ -322,7 +322,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1220;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -429,7 +429,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RotationFaceDetection_Example/Pods-RotationFaceDetection_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RotationFaceDetection_Example/Pods-RotationFaceDetection_Example.modulemap";
@@ -492,7 +492,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RotationFaceDetection_Tests/Pods-RotationFaceDetection_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RotationFaceDetection_Tests/Pods-RotationFaceDetection_Tests.modulemap";
@@ -524,7 +524,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RotationFaceDetection_Tests/Pods-RotationFaceDetection_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RotationFaceDetection_Tests/Pods-RotationFaceDetection_Tests.modulemap";
@@ -595,7 +595,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -623,7 +623,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RotationFaceDetection_Example/Pods-RotationFaceDetection_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RotationFaceDetection_Example/Pods-RotationFaceDetection_Example.modulemap";
@@ -691,13 +691,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

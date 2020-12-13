@@ -44,13 +44,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(g)
-
+        /*
+         Please set the rotating screen.
+         Set the screen to be displayed in the second argument.
+         */
         a = VNAngularStructure(v: VNImageRequest(), view: imageView)
     }
 
     override func viewDidAppear(_ animeted: Bool) {
         super.viewDidAppear(animeted)
-
+        /*
+         Please set the rotating screen
+         A face photo is a material for face recognition.
+         The first argument is the screen for tap setting.
+         The second argument is the screen for setting the image, and it is OK without displaying it on the screen.
+         */
         g.tapped(view: imageView, addView: imageView, up: "dbank", left: "dbank2", down: "dbank3", right: "dbank4", v: a?.v)
         a?.frame = imageView.frame
     }
